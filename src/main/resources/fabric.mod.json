@@ -1,26 +1,32 @@
 {
 	"schemaVersion": 1,
-	"id": "examplemod",
+	"id": "ultimatefist",
 	"version": "${version}",
-	"name": "Example Mod",
-	"description": "This mod aims to help new BTA modders.",
+	"name": "Ultimate Fist",
+	"description": "This mod is a simple reimplementation of the Ultimate Fist mod for Beta 1.3_01.",
 	"authors": [
-		"Turnip Labs"
+		"BoredBanana"
 	],
 	"contact": {
-		"homepage": "",
-		"sources": ""
+		"homepage": "https://github.com/B0redBanana/",
+		"sources": "https://github.com/B0redBanana/ultimate-fist-bta"
 	},
 	"icon": "icon.png",
-	"license": "CC0-1.0",
+	"license": [
+		"GPL-3.0-or-later",
+		"LicenseRef-UltimateFist-Assets"
+	],
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"turniplabs.examplemod.ExampleMod"
+			"boredbanana.ultimatefist.UltimateFist"
+		],
+		"client": [
+			"boredbanana.ultimatefist.UltimateFistClient"
 		]
 	},
 	"mixins": [
-		"examplemod.mixins.json"
+		"ultimatefist.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=${fabricloader}",
